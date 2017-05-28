@@ -2,6 +2,7 @@
   "name": "steven10172.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://stevenbrice.com/build",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
@@ -18,6 +19,7 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "gh-pages": "npm run build && cp build/index.html ./index.html"
   }
 }
