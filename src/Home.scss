@@ -1,5 +1,5 @@
 $font-size: 75px;
-$primary-color: #4CAF50;
+$primary-color: #4cad50;
 
 * {
   transition: all 1s ease;
@@ -54,10 +54,26 @@ $primary-color: #4CAF50;
 }
 
 .text {
-  margin-top: 40px;
+  margin-top: 20px;
   display: inline-block;
   color: white;
   float: left;
+
+  .top {
+    font-size: 13px;
+
+    @media (max-width: 670px) {
+      font-size: 11px;
+    }
+
+    .primary-color {
+      color: rgba(76, 173, 80, 0.4); // $primary-color
+    }
+
+    span:not(.primary-color) {
+      color: rgba(252, 252, 252, 0.2);
+    }
+  }
 
   @media (max-width: 670px) {
     margin-top: 0;
