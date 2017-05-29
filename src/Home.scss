@@ -98,8 +98,8 @@ $primary-color: #4cad50;
   line-height: 11px;
   letter-spacing: 0.5px;
 
-  a {
-    margin-right: 15px;
+  a + a {
+    margin-left: 15px;
   }
 }
 
